@@ -24,3 +24,19 @@ def transform_sales(records):
         )
 
     return transformed_records
+
+
+def calculate_summary(records):
+    """
+    Calculate summary metrics from transformed sales records.
+    """
+
+    total_orders = len(records)
+    total_items_sold = sum(record["quantity"] for record in records)
+    total_revenue = round(sum(record["total"] for record in records), 2)
+
+    return {
+        "total_orders": total_orders,
+        "total_items_sold": total_items_sold,
+        "total_revenue": total_revenue,
+    }
