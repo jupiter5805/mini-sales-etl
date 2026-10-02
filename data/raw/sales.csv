@@ -1,0 +1,7 @@
+order_id,customer,product,quantity,unit_price
+1,Ali,Laptop Stand,2,25.50
+2,Sara,Keyboard,1,49.99
+3,John,Mouse,3,15.00
+4,Ali,Keyboard,2,49.99
+5,Mary,Monitor,1,180.00
+6,Sara,Mouse,2,15.00
